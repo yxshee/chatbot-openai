@@ -1,10 +1,5 @@
 # Chatbot OpenAI
 
-![License](https://img.shields.io/github/license/yxshee/chatbot-openai)
-![Issues](https://img.shields.io/github/issues/yxshee/chatbot-openai)
-![Forks](https://img.shields.io/github/forks/yxshee/chatbot-openai)
-![Stars](https://img.shields.io/github/stars/yxshee/chatbot-openai)
-
 A powerful and customizable chatbot built using OpenAI's GPT-4 API. This chatbot can be integrated into various platforms to provide intelligent, conversational experiences for users. Whether you're looking to enhance customer support, create interactive applications, or experiment with AI-driven conversations, this project offers a solid foundation to get you started.
 
 ## Table of Contents
