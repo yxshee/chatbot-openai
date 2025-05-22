@@ -221,15 +221,12 @@ stream = client.chat.completions.create(
 
 ## 🎨 Screenshots
 
-<div align="center">
 
-### 💻 Chat Interface
-*Clean, intuitive design with real-time streaming responses*
 
-### 🔐 API Key Input
-*Secure API key input with helpful links and instructions*
+<img width="60%" alt="image" src="https://github.com/user-attachments/assets/9d1274ef-34c9-4043-bcb4-edd6814567a9" />
 
-</div>
+
+
 
 ## 🛣️ Features & Roadmap
 
