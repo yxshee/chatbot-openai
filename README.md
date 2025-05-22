@@ -188,17 +188,6 @@ chatbot-openai/
 └── 📄 README.md
 ```
 
-## 🎨 Screenshots
-
-<div align="center">
-
-### 💻 Desktop View
-![Desktop Chat Interface](https://via.placeholder.com/800x400/2196F3/ffffff?text=Desktop+Chat+Interface)
-
-### 📱 Mobile View
-<img src="https://via.placeholder.com/300x600/4CAF50/ffffff?text=Mobile+Chat+Interface" alt="Mobile Chat Interface" width="300"/>
-
-</div>
 
 ## 🛣️ Roadmap
 
@@ -248,13 +237,6 @@ We love contributions! Here's how you can help:
 4. Push to branch: `git push origin feature/amazing-feature`
 5. Open a Pull Request
 
-## 📊 Stats
-
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=venom&repo=chatbot-openai&show_icons=true&theme=radical)
-
-</div>
 
 ## 📜 License
 
