@@ -93,14 +93,20 @@ Before you begin, ensure you have:
    pip install -r requirements.txt
    ```
 
-3. **Run the application**
+3. **Set up environment variables (optional)**
    ```bash
-   streamlit run streamlit_app.py
+   cp .env.example .env
+   # Edit .env file with your OpenAI API key
    ```
 
-4. **Enter your OpenAI API Key**
+4. **Run the application**
+   ```bash
+   streamlit run app.py
+   ```
+
+5. **Enter your OpenAI API Key**
    - Open the app in your browser (usually http://localhost:8501)
-   - Enter your OpenAI API key in the sidebar
+   - Enter your OpenAI API key in the input field (if not set in environment)
    - Start chatting!
 
 🎉 **That's it!** Your chatbot is ready to use!
@@ -148,14 +154,27 @@ graph LR
 
 ```
 chatbot-openai/
-├── 📄 streamlit_app.py    # Main Streamlit application
-├── 📄 requirements.txt    # Python dependencies
-├── 📄 LICENSE            # Apache 2.0 License
-└── 📄 README.md          # This file
-
-Optional:
-├── 📁 .streamlit/
-│   └── 📄 secrets.toml   # API key storage
+├── 📄 app.py                    # Main application entry point
+├── 📄 requirements.txt          # Python dependencies
+├── 📄 .env.example             # Environment variables template
+├── 📄 .gitignore               # Git ignore rules
+├── 📄 LICENSE                  # Apache 2.0 License
+├── 📄 README.md                # This file
+├── 📁 src/                     # Source code package
+│   ├── 📄 __init__.py          # Package initialization
+│   ├── 📁 config/              # Configuration management
+│   │   └── 📄 settings.py      # App settings and config
+│   ├── 📁 services/            # Business logic services
+│   │   └── 📄 openai_service.py # OpenAI API service
+│   ├── 📁 ui/                  # User interface components
+│   │   ├── 📄 main.py          # Main UI orchestration
+│   │   └── 📄 components.py    # Reusable UI components
+│   └── 📁 utils/               # Utility functions
+│       └── 📄 session_manager.py # Session state management
+├── 📁 tests/                   # Test files (future)
+├── 📁 docs/                    # Documentation (future)
+└── 📁 .streamlit/              # Streamlit configuration
+    └── 📄 secrets.toml         # API key storage (optional)
 ```
 
 ## 🔧 Code Overview
@@ -178,6 +197,28 @@ stream = client.chat.completions.create(
 )
 ```
 
+## 🆕 New Features
+
+### 🔧 Enhanced Configuration
+- **Multiple model support** (GPT-3.5, GPT-4, GPT-4-turbo)
+- **Temperature control** for response creativity
+- **Environment variable support** for API keys
+- **Centralized settings management**
+
+### 🎨 Improved UI
+- **Sidebar configuration panel**
+- **Model selection dropdown**
+- **Clear conversation button**
+- **Export conversation feature**
+- **Better error handling and validation**
+
+### 🏗️ Better Architecture
+- **Modular code structure** with separate concerns
+- **Service layer** for OpenAI API interactions
+- **Reusable UI components**
+- **Session state management utilities**
+- **Configuration management system**
+
 ## 🎨 Screenshots
 
 <div align="center">
@@ -192,16 +233,20 @@ stream = client.chat.completions.create(
 
 ## 🛣️ Features & Roadmap
 
-- ✅ **OpenAI GPT-3.5-turbo Integration**
+- ✅ **OpenAI GPT Integration** (3.5-turbo, GPT-4)
 - ✅ **Streamlit Web Interface**
 - ✅ **Message History Persistence**
 - ✅ **Streaming Responses**
 - ✅ **Secure API Key Input**
-- 📋 **Multiple Model Support** (GPT-4, etc.)
-- 📋 **Conversation Export**
+- ✅ **Model Selection**
+- ✅ **Temperature Control**
+- ✅ **Conversation Export**
+- ✅ **Modular Architecture**
 - 📋 **Custom System Prompts**
 - 📋 **File Upload Support**
 - 📋 **Dark/Light Theme Toggle**
+- 📋 **Conversation Management**
+- 📋 **User Authentication**
 
 ## 🤝 Contributing
 
